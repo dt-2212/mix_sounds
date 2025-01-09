@@ -162,6 +162,7 @@ class _AudioMixerHomePageState extends State<AudioMixerHomePage> {
 
       String inputs = '';
       String amixFilter = 'amix=inputs=${_audioFiles.length}:duration=longest';
+      // có thể thay longest bằng các thông số khác để điều chỉnh file output
 
       for (int i = 0; i < _audioFiles.length; i++) {
         inputs += '-i "${_audioFiles[i].path}" ';
